@@ -1,0 +1,83 @@
+{
+    "project": {
+      "name": "SuperApp",
+      "description": "A next-generation app that changes everything. Built with cutting-edge technology.",
+      "version": "1.0.0",
+      "releaseDate": "2024-09-10",
+      "status": "active",
+      "team": [
+        {
+          "name": "Alice",
+          "role": "Developer",
+          "skills": ["JavaScript", "Node.js", "React"],
+          "availability": true
+        },
+        {
+          "name": "Bob",
+          "role": "Designer",
+          "skills": ["Figma", "Sketch", "Adobe XD"],
+          "availability": false
+        },
+        {
+          "name": "Charlie",
+          "role": "Tester",
+          "skills": ["Manual Testing", "Automation", "Jest"],
+          "availability": true
+        }
+      ]
+    },
+    "config": {
+      "database": {
+        "host": "localhost",
+        "port": 5432,
+        "username": "admin",
+        "password": "secret",
+        "replicas": [
+          {
+            "host": "replica1.db.local",
+            "port": 5432
+          },
+          {
+            "host": "replica2.db.local",
+            "port": 5432
+          }
+        ]
+      },
+      "api": {
+        "baseURL": "https://api.superapp.com",
+        "endpoints": {
+          "login": "/auth/login",
+          "register": "/auth/register",
+          "getUser": "/users/:id"
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer {{TOKEN}}"
+        }
+      }
+    },
+    "features": [
+      "Authentication",
+      "User Profiles",
+      "Advanced Analytics",
+      "Real-time Notifications"
+    ],
+    "environment": {
+      "development": {
+        "baseURL": "http://localhost:3000",
+        "debugMode": true,
+        "featureFlags": ["BETA_FEATURE", "EXPERIMENTAL_UI"]
+      },
+      "production": {
+        "baseURL": "https://superapp.com",
+        "debugMode": false,
+        "featureFlags": null
+      }
+    },
+    "documentation": {
+      "url": "https://docs.superapp.com",
+      "contactEmail": "support@superapp.com",
+      "changelog": "v1.0.0 - Initial release\nv1.1.0 - Added new features\nv2.0.0 - Major update with breaking changes"
+    }
+  }
+  

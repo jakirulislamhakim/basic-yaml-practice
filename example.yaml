@@ -1,0 +1,79 @@
+project : 
+  name: SuperApp
+  description : >
+    A next-generation app that changes everything.
+    Built with cutting-edge technology.
+  version : "1.0.0"
+  releaseDate: "2024-09-10"
+  status : active
+  team : 
+    - 
+      name : Hakim
+      role : Developer
+      skills : 
+        - Javascript
+        - Node.js
+        - React
+      availability : true
+    - 
+      name : Sabbir 
+      role : Designer
+      skills : 
+        - Figma 
+        - Sketch
+        - Adobe XD
+      availability : false
+    - 
+      name : Mubin 
+      role : Tester
+      skills : 
+        - Manual Testing 
+        - Automation 
+        - Jest
+      availability : true
+
+# this is database configuration 
+config : 
+  database : 
+    host : localhost 
+    port : &port 5432
+    username : admin
+    password : secret
+    replicas : 
+      - &commonHost
+        host : replica1.db.local
+        port : *port
+      - *commonHost
+
+# this is project features section 
+features : 
+  - Authentication 
+  - User Profiles 
+  - Advanced Analytics
+  - Real-time Notifications
+
+# this is project environment 
+environment : 
+  # dev env
+  development : 
+    baseURL : http://localhost:3000 
+    debugMode : true
+    featureFlags : 
+      - BETA_FEATURE
+      - EXPERIMENTAL_UI
+
+  # production env
+  production : 
+    baseURL : https://superapp.com
+    debugMode : false
+    featureFlags : null
+
+# this is documentation section
+documentation : 
+  url : https://docs.superapp.com
+  contactEmail : support@superapp.com
+  changelog : >
+    v1.0.0 
+    - Initial release\nv1.1.0 
+    - Added new features\nv2.0.0 
+    - Major update with breaking changes

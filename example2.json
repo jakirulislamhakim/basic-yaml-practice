@@ -1,0 +1,101 @@
+{
+    "project": {
+      "name": "AI-Powered App",
+      "description": "An AI-powered application designed to revolutionize industries with real-time data analysis and decision-making.",
+      "version": "2.0.0",
+      "releaseDate": "2024-11-15",
+      "status": "beta",
+      "team": [
+        {
+          "name": "John",
+          "role": "Lead Developer",
+          "skills": ["Python", "Machine Learning", "Docker"],
+          "contact": {
+            "email": "john.doe@aiapp.com",
+            "phone": "123-456-7890"
+          },
+          "availability": true
+        },
+        {
+          "name": "Sara",
+          "role": "UX/UI Designer",
+          "skills": ["Figma", "Adobe XD", "HTML/CSS"],
+          "contact": {
+            "email": "sara@aiapp.com",
+            "phone": "098-765-4321"
+          },
+          "availability": false
+        },
+        {
+          "name": "Mike",
+          "role": "Data Scientist",
+          "skills": ["R", "Big Data", "Statistics"],
+          "contact": {
+            "email": "mike@aiapp.com",
+            "phone": "112-233-4455"
+          },
+          "availability": true
+        }
+      ]
+    },
+    "config": {
+      "database": {
+        "host": "db.aiapp.com",
+        "port": 3306,
+        "username": "aiuser",
+        "password": "aipassword",
+        "connections": {
+          "primary": {
+            "host": "db1.aiapp.com",
+            "port": 3306
+          },
+          "replicas": [
+            {
+              "host": "db2.aiapp.com",
+              "port": 3306
+            },
+            {
+              "host": "db3.aiapp.com",
+              "port": 3306
+            }
+          ]
+        }
+      },
+      "api": {
+        "baseURL": "https://api.aiapp.com",
+        "endpoints": {
+          "getData": "/data/{id}",
+          "trainModel": "/train/{model_id}",
+          "getModelStatus": "/model/status/{model_id}"
+        },
+        "auth": {
+          "header": "Authorization",
+          "token": "{{API_TOKEN}}"
+        }
+      }
+    },
+    "deployment": {
+      "staging": {
+        "url": "https://staging.aiapp.com",
+        "version": "2.0.0-beta",
+        "date": "2024-10-30",
+        "debug": true
+      },
+      "production": {
+        "url": "https://www.aiapp.com",
+        "version": "2.0.0",
+        "date": "2024-11-15",
+        "debug": false
+      }
+    },
+    "commonSettings": {
+      "debug": true,
+      "version": "2.0.0",
+      "date": "2024-11-15"
+    },
+    "documentation": {
+      "url": "https://docs.aiapp.com",
+      "changelog": "v1.0.0 - Initial release\nv1.1.0 - Improved AI algorithms\nv2.0.0 - Major update with new features"
+    }
+  }
+  
